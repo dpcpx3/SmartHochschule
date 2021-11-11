@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="{{title}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/main.js"></script>
+</head>
+<body>
+<div class="container">
     {{{body}}}
-  </body>
+    <div>
+        <p>&copy; <script>document.write(new Date().getFullYear().toString());</script> {{title}}</p>
+    </div>
+</div>
+</body>
 </html>
