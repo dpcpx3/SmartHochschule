@@ -27,6 +27,8 @@
     display: block;
     text-align: center;
     margin: 2.5rem auto 0;
+    max-width: 130px;
+    width: 100%;
 }
 .example-grid .column,
 .example-grid .columns {
