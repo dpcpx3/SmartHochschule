@@ -1,9 +1,22 @@
-var express = require('express');
-var router = express.Router();
+'use strict';
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+/**
+ * Module dependencies.
+ */
+
+const express = require('express');
+const router = express.Router();
+
+/**
+ * GET users listening.
+ */
+
+router.get('/', function (req, res, next) {
+
+    // render html page.
+    res.render('users', {
+        title: 'SmartHochschule',
+    });
 });
 
 module.exports = router;
